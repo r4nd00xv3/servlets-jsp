@@ -1,0 +1,32 @@
+2021-08-17 19:57:59,953 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-08-17 22:24:34,893 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: servlets-jsp:servlets-jsp:0.0.1-SNAPSHOT @ C:\projetos-dev\servletsJSP\servlets-jsp\pom.xml.
+2021-08-17 22:24:41,472 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:41,476 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\main\resources
+2021-08-17 22:24:41,483 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:41,485 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\test\resources
+2021-08-17 22:24:41,533 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /servlets-jsp/src/main/java
+2021-08-17 22:24:41,535 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /servlets-jsp/src/test/java
+2021-08-17 22:24:43,345 [Worker-29: Building Project servlets-jsp] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:43,369 [Worker-29: Building Project servlets-jsp] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\main\resources
+2021-08-17 22:24:43,374 [Worker-29: Building Project servlets-jsp] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:43,376 [Worker-29: Building Project servlets-jsp] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\test\resources
+2021-08-17 22:24:44,826 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2021-08-17 22:24:46,141 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: servlets-jsp:servlets-jsp:0.0.1-SNAPSHOT @ C:\projetos-dev\servletsJSP\servlets-jsp\pom.xml.
+2021-08-17 22:24:48,335 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:48,337 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\main\resources
+2021-08-17 22:24:48,343 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:48,345 [Worker-26: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\test\resources
+2021-08-17 22:24:48,346 [Worker-26: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of servlets-jsp
+2021-08-17 22:24:48,347 [Worker-26: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for servlets-jsp
+2021-08-17 22:24:48,427 [Worker-26: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:48,479 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /servlets-jsp/src/main/java
+2021-08-17 22:24:48,481 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /servlets-jsp/src/test/java
+2021-08-17 22:24:49,548 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for servlets-jsp
+2021-08-17 22:24:49,608 [Worker-27: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2021-08-17 22:24:49,744 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:49,748 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\main\resources
+2021-08-17 22:24:49,750 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-08-17 22:24:49,752 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\projetos-dev\servletsJSP\servlets-jsp\src\test\resources
+2021-08-17 22:24:49,753 [Worker-30: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of servlets-jsp
+2021-08-17 22:24:49,753 [Worker-30: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for servlets-jsp
+2021-08-17 22:24:49,760 [Worker-30: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
