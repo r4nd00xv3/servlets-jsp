@@ -21,27 +21,38 @@ public class ServletLogin extends HttpServlet {
 
 	/*recebe os dados pela url por parametos*/
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+		response.getWriter().append("Served at: ").append(request.getContextPath());	}
 
 	/*recebe os dados enviados p formulario*/
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
 		
 		if (login != null && !login.isEmpty() && senha != null && !senha.isEmpty()) {
 
+		
 		ModelLogin modelLogin = new ModelLogin();
 		modelLogin.setLogin(login);
-		modelLogin.setLogin(senha);
-		
+		modelLogin.setSenha(senha);
+
+			if (modelLogin.getLogin().equalsIgnoreCase("admin")
+					&& modelLogin.getSenha().equalsIgnoreCase("admin")) {
+				
+				request.getSession().setAttribute("usuario", modelLogin.getLogin());
+				
+				RequestDispatcher redirecionar = request.getRequestDispatcher("principal/principal.jsp");
+				request.setAttribute("msg", "Informe o Login e senha corretamente");
+				redirecionar.forward(request, response);
+			}
+			  else {
+				RequestDispatcher redirecionar = request.getRequestDispatcher("index.jsp");
+				request.setAttribute("msg", "Informe o Login e senha corretamente");
+				redirecionar.forward(request, response);
+			}	
 
 	}
 	else {
 		RequestDispatcher redirecionar = request.getRequestDispatcher("index.jsp");
 		request.setAttribute("msg", "Informe o Login e senha corretamente");
 		redirecionar.forward(request, response);
-	}
-}
-}
+	}}}

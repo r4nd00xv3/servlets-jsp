@@ -14,8 +14,8 @@
             <a href="#" id="flipToRecover" class="flipLink">
               <div id="triangle-topright"></div>
             </a>
-            <input type="email" class="form-control" name="login" id="loginEmail" placeholder="Digite o email">
-            <input type="password" class="form-control" name="senha" id="loginPass" placeholder="Digite a senha">
+            <input type="text" class="form-control" name="login"  placeholder="Digite o email">
+            <input type="password" class="form-control" name="senha" placeholder="Digite a senha">
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
           </form>
     
