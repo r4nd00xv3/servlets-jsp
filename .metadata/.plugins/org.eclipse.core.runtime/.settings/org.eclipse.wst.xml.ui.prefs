@@ -1,3 +1,4 @@
+autoProposeCode=.@(\#&$abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
 cdataBorder=\#FFFFFF | null | null | null | null | null
 cdataText=\#D8D8D8 | null | null | null | null | null
 commentBorder=\#C7DD0C | null | null | false | null | null
@@ -19,3 +20,5 @@ tagAttributeValue=\#FFC600 | null | null | null | null | null
 tagBorder=\#79ABFF | null | null | null | null | null
 tagName=\#BED6FF | null | null | null | null | null
 xmlContent=\#D8D8D8 | null | null | null | null | null
+xml_content_assist_default_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000
+xml_content_assist_own_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000

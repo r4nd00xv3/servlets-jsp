@@ -9,6 +9,7 @@
 <body>
 <h3>SERVLETS JSP PROJECT</h3>
 <form action="ServletLogin" method="post">
+<input type="hidden" value="<%= request.getParameter("url")%>" name="url">
     	<div class="container" id="formContainer">
             <h3 class="form-signin-heading">Login !</h3>
             <a href="#" id="flipToRecover" class="flipLink">

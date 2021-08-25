@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import model.ModelLogin;
 
 
-@WebServlet("/ServletLogin")/*mapeamento da pagina*/
+@WebServlet(urlPatterns = {"/principal/ServletLogin", "/ServletLogin"})/*mapeamento da pagina*/
 public class ServletLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -20,13 +20,13 @@ public class ServletLogin extends HttpServlet {
     }
 
 	/*recebe os dados pela url por parametos*/
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());	}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
 
 	/*recebe os dados enviados p formulario*/
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
+		String url = request.getParameter("url");
 		
 		if (login != null && !login.isEmpty() && senha != null && !senha.isEmpty()) {
 
@@ -39,8 +39,12 @@ public class ServletLogin extends HttpServlet {
 					&& modelLogin.getSenha().equalsIgnoreCase("admin")) {
 				
 				request.getSession().setAttribute("usuario", modelLogin.getLogin());
+				if (url == null || url.equals("null")) {
+					url = "principal/principal.jsp";
+					
+				}
 				
-				RequestDispatcher redirecionar = request.getRequestDispatcher("principal/principal.jsp");
+				RequestDispatcher redirecionar = request.getRequestDispatcher(url);
 				request.setAttribute("msg", "Informe o Login e senha corretamente");
 				redirecionar.forward(request, response);
 			}
