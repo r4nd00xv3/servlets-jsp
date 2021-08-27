@@ -22,13 +22,17 @@ public class ServletLogin extends HttpServlet {
     }
 
 	/*recebe os dados pela url por parametos*/
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {}
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
 
 	/*recebe os dados enviados p formulario*/
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String login = request.getParameter("login");
 		String senha = request.getParameter("senha");
 		String url = request.getParameter("url");
+		
+		
 						try {
 							
 						
@@ -66,5 +70,8 @@ public class ServletLogin extends HttpServlet {
 					}
 					} catch (Exception e) {
 						e.printStackTrace();
+						RequestDispatcher redirecionar = request.getRequestDispatcher("erro.jsp");
+						request.setAttribute("msg", e.getMessage());
+						redirecionar.forward(request, response);
 	}
 	}}
