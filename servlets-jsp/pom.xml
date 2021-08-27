@@ -6,7 +6,12 @@
   <packaging>war</packaging>
   <name>servlets-jsp</name>
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>9.4.1212</version>
+</dependency>
 
   </dependencies>
   <build>
