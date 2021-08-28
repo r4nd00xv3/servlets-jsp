@@ -4,13 +4,7 @@
 <html lang="en">
 <jsp:include page="head.jsp"></jsp:include>
 <jsp:include page="theme-loader.jsp"></jsp:include>
-
-
-
-
-
-
-  <body>
+ <body>
  <div class="span3 well">
     <form accept-charset="UTF-8" action="" method="post">
 		<input class="span3" name="name" placeholder="Full Name" type="text"> 
