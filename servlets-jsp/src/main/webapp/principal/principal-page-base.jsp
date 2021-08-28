@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
-
 <jsp:include page="head.jsp"></jsp:include>
 <jsp:include page="theme-loader.jsp"></jsp:include>
 
@@ -18,11 +17,16 @@
       <div class="pcoded-overlay-box"></div>
       <div class="pcoded-container navbar-wrapper">
             <jsp:include page="navbar.jsp"></jsp:include>
-      <div class="pcoded-main-container">
+      
+      
+         
+
+          <div class="pcoded-main-container">
               <div class="pcoded-wrapper">
               <jsp:include page="navbarmainmenu.jsp"></jsp:include>
               
-              <div class="pcoded-content">
+                  
+                  <div class="pcoded-content">
 
                   <jsp:include page="page-head.jsp"></jsp:include>
                         <div class="pcoded-inner-content">
@@ -32,7 +36,7 @@
                                     <!-- Page-body start -->
                                     <div class="page-body">
                                         <div class ="row">
-                                        <h3>BookStore</h3>
+                                        <h3>PAGINA BASE</h3>
                                         </div>
                                     </div>
                                     <!-- Page-body end -->
@@ -50,4 +54,3 @@
 </body>
 
 </html>
-    

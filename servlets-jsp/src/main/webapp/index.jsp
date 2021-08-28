@@ -33,7 +33,7 @@ color:red;
 </style>
 </head>
 <body>
-<form action="ServletLogin" method="post" class="row g-3 needs-validation" novalidate>
+<form action="<%=request.getContextPath() %>/ServletLogin" method="post" class="row g-3 needs-validation" novalidate>
 <input type="hidden" value="<%= request.getParameter("url")%>" name="url">
  <div id="login">
         <h3 class="text-center text-white pt-5">JSP  PROJECT</h3>
@@ -67,7 +67,7 @@ color:red;
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                             </div>
                             <div id="register-link" class="text-right">
-                                <a href="#" class="text-info">Register here</a>
+                                <a href="<%=request.getContextPath() %>/principal/novocadastro.jsp" class="link">New Register</a>
                             </div>
                  </div>
                   </div>

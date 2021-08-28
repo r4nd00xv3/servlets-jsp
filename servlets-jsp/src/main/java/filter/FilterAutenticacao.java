@@ -50,6 +50,8 @@ public class FilterAutenticacao implements Filter {
 			String urlParaAutenticar = req.getServletPath();/*url que esta sendo acessada*/
 			
 			
+			
+			
 			/*validar se esta logado senao redirec p pag de login*/
 			if (usuarioLogado == null &&
 					!urlParaAutenticar.equalsIgnoreCase("/principal/ServletLogin")){ /*nao esta logado*/
