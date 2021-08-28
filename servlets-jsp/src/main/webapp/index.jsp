@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
 
-<title>Servlets JSP Project</title>
+<title>Home Bookstore</title>
 
 <style type="text/css">
 
@@ -36,12 +36,12 @@ color:red;
 <form action="<%=request.getContextPath() %>/ServletLogin" method="post" class="row g-3 needs-validation" novalidate>
 <input type="hidden" value="<%= request.getParameter("url")%>" name="url">
  <div id="login">
-        <h3 class="text-center text-white pt-5">JSP  PROJECT</h3>
+        <h3 class="text-center text-white pt-5">Home BookStore</h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
-                            <h3 class="text-center text-info">JSP PROJECT</h3>
+                            <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Username:</label><br>
                                 <input type="text" name="login"  class="form-control" required>
