@@ -96,7 +96,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    <form class="md-float-material form-material" action="<%=request.getContextPath() %>/ServletUsuarioLogin" method="post">
+                    <form class="md-float-material form-material" action="ServletUsuarioLogin" method="post">
                         <div class="text-center">
                             <img src="<%=request.getContextPath() %>/assets/images/logo.png" alt="logo.png">
                         </div>
@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group form-primary">
-                                    <input type="text" name="login" class="form-control" required="required">
+                                    <input type="text" name="nome" class="form-control" required="required">
                                     <span class="form-bar"></span>
                                     <label class="float-label">Name</label>
                                 </div>
@@ -120,7 +120,7 @@
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group form-primary">
-                                            <input type="password" name="password" class="form-control" required="required" autocomplete="off">
+                                            <input type="password" name="senha" class="form-control" required="required" autocomplete="off">
                                             <span class="form-bar"></span>
                                             <label class="float-label">Password</label>
                                         </div>

@@ -67,7 +67,7 @@ color:red;
                                 <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
                             </div>
                             <div id="register-link" class="text-right">
-                                <a href="<%=request.getContextPath() %>/principal/novocadastro.jsp" class="link">New Register</a>
+                                <a href="<%=request.getContextPath() %>/novocadastro.jsp" class="link">New Register</a>
                             </div>
                  </div>
                   </div>

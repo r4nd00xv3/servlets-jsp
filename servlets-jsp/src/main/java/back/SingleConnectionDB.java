@@ -1,10 +1,10 @@
-package connection;
+package back;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class SingleConnectionDB {
-	private static  String banco = "jdbc:postgresql://localhost:5432/jsp-project?autoReconnect=true";
+	private static  String banco = "jdbc:postgresql://localhost:5432/bookstore?autoReconnect=true";
 	private static String user = "postgres";
 	private static String senha = "admin";
 	private static Connection connection = null;

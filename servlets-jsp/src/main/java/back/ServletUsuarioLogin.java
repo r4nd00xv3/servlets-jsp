@@ -1,4 +1,4 @@
-package servlets;
+package back;
 
 import java.io.IOException;
 
@@ -10,7 +10,6 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.ModelLogin;
 
 
 @WebServlet("/ServletUsuarioLogin")
@@ -38,7 +37,7 @@ public class ServletUsuarioLogin extends HttpServlet {
 		modelLogin.setSenha(senha);
 		modelLogin.setNome(nome);
 
-		RequestDispatcher redirecionar = request.getRequestDispatcher("principal/novocadastro.jsp");
+		RequestDispatcher redirecionar = request.getRequestDispatcher("/novocadastro.jsp");
 		redirecionar.forward(request, response);
 		
 		

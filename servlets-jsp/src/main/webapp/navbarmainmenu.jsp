@@ -17,7 +17,7 @@
                                       <li class="more-details">
                                           <a href="user-profile.html"><i class="ti-user"></i>View Profile</a>
                                           <a href="#!"><i class="ti-settings"></i>Settings</a>
-                                          <a href="<%=request.getContextPath() %>/ServletLogin?acao=logout"><i class="ti-layout-sidebar-left"></i>Logout</a>
+                                          <a href="ServletLogin?acao=logout"><i class="ti-layout-sidebar-left"></i>Logout</a>
                                       </li>
                                   </ul>
                               </div>
@@ -124,7 +124,7 @@
                           <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Books</div>
                           <ul class="pcoded-item pcoded-left-item">
                               <li>
-                                  <a href="<%=request.getContextPath() %>/principal/cadlivro.jsp" class="waves-effect waves-dark">
+                                  <a href="cadlivro.jsp" class="waves-effect waves-dark">
                                       <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                       <span class="pcoded-mtext" data-i18n="nav.form-components.main">My Books</span>
                                       <span class="pcoded-mcaret"></span>

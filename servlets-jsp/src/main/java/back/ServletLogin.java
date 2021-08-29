@@ -1,18 +1,16 @@
-package servlets;
+package back;
 
 import java.io.IOException;
 
-import dao.DAOLoginRepository;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.ModelLogin;
 
 
-@WebServlet(urlPatterns = {"/principal/ServletLogin", "/ServletLogin"})/*mapeamento da pagina*/
+@WebServlet(urlPatterns = {"/ServletLogin"})/*mapeamento da pagina*/
 public class ServletLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private DAOLoginRepository daoLoginRepository =  new DAOLoginRepository();
@@ -60,7 +58,7 @@ public class ServletLogin extends HttpServlet {
 								
 								request.getSession().setAttribute("usuario", modelLogin.getLogin());
 								if (url == null || url.equals("null")) {
-									url = "principal/principal.jsp";
+									url = "/principal.jsp";
 									
 								}
 								
