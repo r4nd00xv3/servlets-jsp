@@ -1,219 +1,116 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Mega Able bootstrap admin template by codedthemes </title>
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-      <!-- Meta -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
-      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
-      <meta name="author" content="codedthemes" />
-      <!-- Favicon icon -->
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="icon" href="<%=request.getContextPath() %>/assets/images/favicon.ico" type="image/x-icon">
-      <!-- Google font-->     
-      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
-      <!-- Required Fremwork -->
-      <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/assets/css/bootstrap/css/bootstrap.min.css">
-      <!-- waves.css -->
-      <link rel="stylesheet" href="<%=request.getContextPath() %>/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
-      <!-- themify-icons line icon -->
-      <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/assets/icon/themify-icons/themify-icons.css">
-      <!-- ico font -->
-      <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/assets/icon/icofont/css/icofont.css">
-      <!-- Font Awesome -->
-      <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/assets/icon/font-awesome/css/font-awesome.min.css">
-      <!-- Style.css -->
-      <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/assets/css/style.css">
-  </head>
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  <body themebg-pattern="theme1">
-  <!-- Pre-loader start -->
-  <div class="theme-loader">
-      <div class="loader-track">
-          <div class="preloader-wrapper">
-              <div class="spinner-layer spinner-blue">
-                  <div class="circle-clipper left">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="circle-clipper right">
-                      <div class="circle"></div>
-                  </div>
-              </div>
-              <div class="spinner-layer spinner-red">
-                  <div class="circle-clipper left">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="circle-clipper right">
-                      <div class="circle"></div>
-                  </div>
-              </div>
-            
-              <div class="spinner-layer spinner-yellow">
-                  <div class="circle-clipper left">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="circle-clipper right">
-                      <div class="circle"></div>
-                  </div>
-              </div>
-            
-              <div class="spinner-layer spinner-green">
-                  <div class="circle-clipper left">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="gap-patch">
-                      <div class="circle"></div>
-                  </div>
-                  <div class="circle-clipper right">
-                      <div class="circle"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Pre-loader end -->
-  <section class="login-block">
-        <!-- Container-fluid starts -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <form class="md-float-material form-material" action="ServletUsuarioLogin" method="post">
-                        <div class="text-center">
-                            <img src="<%=request.getContextPath() %>/assets/images/logo.png" alt="logo.png">
-                        </div>
-                        <div class="auth-box card">
-                            <div class="card-block">
-                                <div class="row m-b-20">
-                                    <div class="col-md-12">
-                                        <h3 class="text-center txt-primary">Sign up</h3>
-                                    </div>
-                                </div>
-                                <div class="form-group form-primary">
-                                    <input type="text" name="nome" class="form-control" required="required">
-                                    <span class="form-bar"></span>
-                                    <label class="float-label">Name</label>
-                                </div>
-                                <div class="form-group form-primary">
-                                    <input type="text" name="login" class="form-control" required="required" autocomplete="off">
-                                    <span class="form-bar"></span>
-                                    <label class="float-label">Name User</label>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group form-primary">
-                                            <input type="password" name="senha" class="form-control" required="required" autocomplete="off">
-                                            <span class="form-bar"></span>
-                                            <label class="float-label">Password</label>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="row m-t-30">
-                                    <div class="col-md-12">
-                                        <button type="button" class="btn btn-primary btn-md btn-block waves-effect text-center m-b-20">Confirm</button>
-                                    </div>
-                                </div>
-                                <hr/>
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <p class="text-inverse text-left m-b-0">Thank you.</p>
-                                        <p class="text-inverse text-left"><a href="<%=request.getContextPath() %>/index.jsp"><b>Back to Login</b></a></p>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <img src="<%=request.getContextPath() %>/assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!-- end of col-sm-12 -->
-            </div>
-            <!-- end of row -->
-        </div>
-        <!-- end of container-fluid -->
-    </section>
-    <!-- Warning Section Starts -->
-    <!-- Older IE warning message -->
-    <!--[if lt IE 10]>
-<div class="ie-warning">
-    <h1>Warning!!</h1>
-    <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
-    <div class="iew-container">
-        <ul class="iew-download">
-            <li>
-                <a href="http://www.google.com/chrome/">
-                    <img src="<%=request.getContextPath() %>/assets/images/browser/chrome.png" alt="Chrome">
-                    <div>Chrome</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="<%=request.getContextPath() %>/assets/images/browser/firefox.png" alt="Firefox">
-                    <div>Firefox</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://www.opera.com">
-                    <img src="<%=request.getContextPath() %>/assets/images/browser/opera.png" alt="Opera">
-                    <div>Opera</div>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.apple.com/safari/">
-                    <img src="<%=request.getContextPath() %>/assets/images/browser/safari.png" alt="Safari">
-                    <div>Safari</div>
-                </a>
-            </li>
-            <li>
-                <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                    <img src="<%=request.getContextPath() %>/assets/images/browser/ie.png" alt="">
-                    <div>IE (9 & above)</div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <p>Sorry for the inconvenience!</p>
+
+<title>Register</title>
+
+<style type="text/css">
+
+h6 {
+	position: absolute;
+	top: 75%;
+	left: 33%;
+	
+}
+.msg{
+position: absolute;
+top: 80%;
+left: 33%;
+font-size: 15px;
+color:red;
 </div>
-<![endif]-->
-<!-- Warning Section Ends -->
-<!-- Required Jquery -->
-    <script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/jquery/jquery.min.js"></script>     <script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/jquery-ui/jquery-ui.min.js "></script>     <script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/popper.js/popper.min.js"></script>     <script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/bootstrap/js/bootstrap.min.js "></script>
-<!-- waves js -->
-<script src="<%=request.getContextPath() %>/assets/pages/waves/js/waves.min.js"></script>
-<!-- jquery slimscroll js -->
-<script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
-<!-- modernizr js -->
-    <script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/SmoothScroll.js"></script>     <script src="<%=request.getContextPath() %>/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
-<!-- i18next.min.js -->
-<script type="text/javascript" src="bower_components/i18next/js/i18next.min.js"></script>
-<script type="text/javascript" src="bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js"></script>
-<script type="text/javascript" src="bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js"></script>
-<script type="text/javascript" src="bower_components/jquery-i18next/js/jquery-i18next.min.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath() %>/assets/js/common-pages.js"></script>
+}
+</style>
+</head>
+<body>
+<form action="<%=request.getContextPath() %>/ServletUsuarioLogin" method="post" class="row g-3 needs-validation" novalidate>
+<input type="hidden" value="<%= request.getParameter("url")%>" name="url">
+ <div id="login">
+        <h3 class="text-center text-white pt-5">Register</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                            <h3 class="text-center text-info">New Register</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Nome:</label><br>
+                                <input type="text" name="nome"  class="form-control" required>
+	                                 <div class="invalid-feedback">
+	                                 Please!
+									    </div>
+									    <div class="valid-feedback">
+	                                 Ok!
+									    </div>
+		                            </div>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="login"  class="form-control" required>
+	                                 <div class="invalid-feedback">
+	                                 Please!
+									    </div>
+									    <div class="valid-feedback">
+	                                 Ok!
+									    </div>
+		                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="password" name="senha" class="form-control" required>
+                                 <div class="invalid-feedback">
+                                  Please!								    
+                                  </div>
+                                   <div class="valid-feedback">
+                                  Ok!									    
+                                  </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="<%=request.getContextPath() %>/index.jsp" class="link">Back Login</a>
+                            </div>
+                 </div>
+                  </div>
+                   </div>
+                    </div>
+                     </div>
+ </form>
+
+ 
+<h6>${msg}</h6>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script type="text/javascript">
+//Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
 </body>
-
-</html>
-
 </html>
     
