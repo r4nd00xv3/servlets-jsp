@@ -1,6 +1,7 @@
 package back;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 public class ModelLogin implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -10,7 +11,18 @@ public class ModelLogin implements Serializable {
 	private String titulob;
 	private String nomeaut;	
 	private Long id;
+	private String date;
+		
 	
+	
+public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
 public boolean isNovo() {
 		
 		if (this.id == null) {

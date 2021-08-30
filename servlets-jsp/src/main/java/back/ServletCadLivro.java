@@ -115,15 +115,17 @@ public class ServletCadLivro extends HttpServlet {
 		
 		String id = request.getParameter("id");
 		String nome = request.getParameter("nome");
-		String login = request.getParameter("login");
-		String senha = request.getParameter("senha");
+		String nomeaut = request.getParameter("nomeaut");
+		String titulob = request.getParameter("titulob");
+		String date = request.getParameter("date");
 		
 		ModelLogin modelLogin = new ModelLogin();
 		
 		modelLogin.setId(id != null && !id.isEmpty() ? Long.parseLong(id) : null);
 		modelLogin.setNome(nome);
-		modelLogin.setLogin(login);
-		modelLogin.setSenha(senha);
+		modelLogin.setNomeaut(nomeaut);;
+		modelLogin.setTitulob(titulob);
+		modelLogin.setDate(date);
 		
 		
 		if (daoUsuarioRepository.validarLogin(modelLogin.getLogin()) && modelLogin.getId() == null) {
