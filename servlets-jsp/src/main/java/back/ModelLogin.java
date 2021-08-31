@@ -11,6 +11,7 @@ public class ModelLogin implements Serializable {
 	private String titulob;
 	private String nomeaut;	
 	private Long id;
+	
 	private String date;
 		
 	
